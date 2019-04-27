@@ -1,0 +1,32 @@
+
+.quotes {
+        display: none;
+        text-align: center;
+        height: 100px;
+        width:1800px;
+        font-family: 'Raleway', sans-serif;
+        font-style: '600';
+        top:800px;
+    }
+
+
+div {
+    font-family: 'Raleway', sans-serif;
+    font-style: '600';
+    width: 1600px;
+    height: 50px;
+    text-align: center;
+    font-size: 50px;
+
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation-duration: 3s;
+    animation-delay: 6s;
+
+}
+
+
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animate.min.css">
+    <script
+            src="https://code.jquery.com/jquery-3.4.0.js"
+            integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
+            crossorigin="anonymous"></script>
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
+</head>
+<body>
+
+    <div>
+        <h2 id="style" class="quotes">in order to get most out of your experience please silence your phone, turn on your speakers and press the [f-11] key or [cmd+shift+f] on mac</h2>
+        <h2 id="style" class="quotes">seriously though, silence your phone. it's pointless otherwise</h2>
+        <h2 id="style" class="quotes">in the quiet place, there are no caps</h2>
+        <h2 id="style" class="quotes">also, there are no facebook notifications</h2>
+        <h2 id="style" class="quotes">...or twitter...</h2>
+        <h2 id="style" class="quotes">...email...</h2>
+        <h2 id="style" class="quotes">...etc...</h2>
+        <h2 id="style" class="quotes">...etc...</h2>
+        <h2 id="style" class="quotes">...</h2>
+        <h2 id="style" class="quotes">have you ever noticed how many things require your attention?</h2>
+        <h2 id="style" class="quotes">you're probably thinking about all the great notifications you are missing right now</h2>
+        <h2 id="style" class="quotes">try to be patient</h2>
+        <h2 id="style" class="quotes">just for a couple minutes</h2>
+        <h2 id="style" class="quotes">just to clear your head for a little</h2>
+        <h2 id="style" class="quotes">i can assure you you're not missing important that cant wait</h2>
+        <h2 id="style" class="quotes">and if you are worried i can sum it up for you</h2>
+        <h2 id="style" class="quotes">some "friend" you don't know made a silly observation about something that recently happened</h2>
+        <h2 id="style" class="quotes">you think that this is all a big joke right?</h2>
+        <h2 id="style" class="quotes">a joke about what became of us humans</h2>
+        <h2 id="style" class="quotes">and the truth is that with all these (so called) great social services, we forget something along the way</h2>
+        <h2 id="style" class="quotes">we forget to take a break from time to time</h2>
+        <h2 id="style" class="quotes">a real break</h2>
+        <h2 id="style" class="quotes">a walk in the park or a vacation in the mountains can be so sweet</h2>
+        <h2 id="style" class="quotes">but if you keep taking your phone with you, you haven't really accomplished anything</h2>
+        <h2 id="style" class="quotes">you keep burdening your mind with all of those meaningless things</h2>
+        <h2 id="style" class="quotes">meaningless. little. things</h2>
+        <h1 id="style" class="quotes">little</h1>
+
+    </div>
+</body>
+<script>
+    (function() {
+
+        var quotes = $(".quotes");
+        var quoteIndex = -1;
+
+        function showNextQuote() {
+            ++quoteIndex;
+            quotes.eq(quoteIndex % quotes.length)
+                .fadeIn(2000)
+                .delay(2000)
+                .fadeOut(2000, showNextQuote);
+        }
+
+        showNextQuote();
+
+    })();
+
+</script>
+</html>
+
